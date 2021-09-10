@@ -7,8 +7,42 @@
     <link rel="stylesheet" href="styles.css">
     <title>Studiedagbok</title>
 </head>
-<body>
+<body>  
+    <div class="inlägg, grey">
+        <h2>Fredag, 2021-09-10</h2>
+       
+        <h4>Local Storage</h4>
+        <p>Local Storage och Sesstion Storage är information som vi kan spara på webbläsaren. informationen som sparas kommer inte att försvinna när man laddar om sidan. Skillnaden på Storage and Session är att information som sparas som Storage (localStorage.setItem("name", "Niklas");) kommer att finnas kvar i webbläsaren trots att man stänger ner flik, webbläsare och t.o.m. datorn. Medan information som spara som Session (sessionStorage.setItem("name", "Niklas");) bara sparas så länge som användaren har uppe filken, annars försvinner informationen. informationen som spras i Storage sparas alltid i par, där den första parametern är key eller "kategorin" och den andra är värdet som ska sättas till kategorin. Känslig information bör aldrig sparas i Storage då den är lättåtkomlig. Känslig information är bättre att spara på en server där den inte kan nås lika lätt. Med Storage kan man göra flera olika saker, t.ex. clear, getItem, key, removeItem, setItem osv.</p>
+        <img src="localStorage.JPG" alt="localStorageImg">
+        
+    </div>
+
+    <br>  
     <div class="inlägg">
+        <h2>Torsdag, 2021-09-09</h2>
+    
+        <h4>Övningsuppgifter</h4>
+        <p>Idag gjorde jag bara övningsuppgifter hela dagen. Övningsuppgifterna var; Manipulera DOM, Funktioner, Loopar och If-statements.</p>
+        <fieldset>
+           <h4>Functions:</h4>
+           <img src="functions.JPG" alt="functionsImg">
+         </fieldset>
+         <fieldset>
+            <h4>If-statements:</h4>
+            <img src="if.JPG" alt="ifImg">
+        </fieldset>
+        <fieldset>
+            <h4>Loopar:</h4>
+            <img src="loopar.JPG" alt="looparImg">
+        </fieldset>
+        <fieldset>
+            <h4>Manipulera DOM:</h4>
+            <img src="manipuleraDOM.JPG" alt="DOMImg">   
+        </fieldset>     
+    </div>
+
+    <br>
+    <div class="inlägg, grey">
         <h2>Onsdag, 2021-09-08</h2>
        
         <h4>Object Properties och Methods </h4>
@@ -28,7 +62,7 @@
         <p>Alla functions kan nå alla variabler utanför functionen men inte tvärt om. Om vi använder oss av lokala variabler innuti en function och vi har samma namn på variabeln som på andra ställen så kommer function att börja leta efter variablen först lokalt i function och sedan gå “ett steg ut” i taget tills den hittar namnet på variabeln. Vi kan använda oss av “use strict”; längst upp i vår JS-sida för att garantera att vi behöver deklarera varje ny variabel som läggs till. </p> 
     </div>
 
-    <hr>
+    <br>
 
     <div class="inlägg">
         <h2>Tisdag, 2021-09-07</h2>
@@ -53,13 +87,14 @@
         <p>Funktioner definieras med hjälp av function name(){} eller med let fn = function(){}. Vi kan skicka med information till en function genom att fylla i information mellan paranteserna: functionName(1, 2, 3);. Funtions kan även ge tillbaka information med hjälp av return value; i slutet av function. Function scope är den bredd av information som functionen kan nå. Den kommer alltid att prioretera information som är innuti sig själv först. En function kan nå information utanför sig själv medan t.e.x. en console.log inte kommer kunna nå en variabel som är innuti en function. Functions kan bl.a. användas för att modifiera inforamtion på en hemsida genom att hämta ny information.</p>
     </div>
 
-    <hr>
+    <br>
 
-    <div class="inlägg">
+    <div class="inlägg, grey">
         <h2>Måndag, 2021-09-06</h2>
 
         <p>Idag har större delen av dagen gått till att studera studieteknik. Jag hann även påbörja Introduktion till Javascript (vecka 2 och 3) där jag bland annat fick lära mig: <strong>URL</strong>=<strong>Uniform Resource Locators</strong> som är unika addresser till sidor. <strong>Http=Hypertext Transfer Protocol</strong> som är den mekanism som tar information till och från webbservern till webbläsaren. Samtliga dokumment samlas på en webbserver som sedan kan nås med unika URLs från en webbläsare. </p>
         <p>Html är standarspråk för webben. Html-filer är uppbyggda av element och attribut. Samtliga html-dokument har en !DOCTYPE html, html, head och body-taggar. Html-filer kan skrivas på olika sätt. I ett text-dokumment, i en IDE (Integrated Development Environment) och även med hjälp av olika ramverk i olika språkkod som automatiserar html-text.</p>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
