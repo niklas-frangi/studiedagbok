@@ -11,6 +11,12 @@
 <body>
     <div class="container" id="contaierR">
         <div>
+            <h1>Måndag, 2021-09-27</h2>
+                <h4>Javascript och dataformatet JSON</h4>
+                <p>Vi skapar en JSON string med namn och tillhörande värde för varje namn på det här sättet: const dataAboutNiklas =  '{"name":"Niklas","age":30, "car":Opel}’. För att göra om våra JSON strings till ett objekt gör vi: const myObj = JSON.parse(dataAboutNiklas);. <br> Vi kan även göra olika subkategorier i varje nyckel på följade sätt: const dataAboutNiklas =  '{"name":"Niklas", "age":30, "car":”color”:”silver”, “seats”:”5”}’. 
+                    på så sätt kan vi få mer detaljerad iformation om en specifik kategori. <br> För att visa infomationen i t.ex. en tom p-tag med id=message kan vi skriva: document.querySelector(“#message”).textContent = myObj.car.color. Och då får vi ut svaret “silver” i p-tagen.</p>
+        </div>
+        <div>
             <h1>Måndag-Fredag, 2021-09-20 - 2021-09-24</h2>
                 <h4>Skapa ett CV och portfolio</h4>
                 <p></p>
