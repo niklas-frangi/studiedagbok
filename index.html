@@ -6,23 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Studiedagbok</title>
 </head>
+
 <body>
     <div class="container" id="contaierR">
-        <div>
-            <h1>Måndag, 2021-09-27</h2>
-                <h4>Javascript och dataformatet JSON</h4>
-                <p>Vi skapar en JSON string med namn och tillhörande värde för varje namn på det här sättet: const dataAboutNiklas =  '{"name":"Niklas","age":30, "car":Opel}’. För att göra om våra JSON strings till ett objekt gör vi: const myObj = JSON.parse(dataAboutNiklas);. <br> Vi kan även göra olika subkategorier i varje nyckel på följade sätt: const dataAboutNiklas =  '{"name":"Niklas", "age":30, "car":”color”:”silver”, “seats”:”5”}’. 
-                    på så sätt kan vi få mer detaljerad iformation om en specifik kategori. <br> För att visa infomationen i t.ex. en tom p-tag med id=message kan vi skriva: document.querySelector(“#message”).textContent = myObj.car.color. Och då får vi ut svaret “silver” i p-tagen.</p>
-        </div>
-        <div>
-            <h1>Måndag-Fredag, 2021-09-20 - 2021-09-24</h2>
-                <h4>Skapa ett CV och portfolio</h4>
+        <!--         <div>
+            <h1></h1>
+                <h4></h4>
                 <p></p>
+        </div> -->
+        <div class="inlägg">
+            <h1>Måndag, 2021-10-11</h1>
+            <h4>Fördjupning Javascript</h4>
+            <p>Med hjälp av <strong>.find</strong> kan vi hitta ett element i en array. Find hittar det första elementet
+                som matchar och slutar leta efter det. I exemplet nedan används arrow-function för att få ner mängden
+                kod.</p>
+            <img src="find.JPG" alt="bild på kod">
+            <p>Om man vill veta index’et av det hittade elementet kan man använda <strong>findIndex()</strong> . Nedan
+                använder jag arrow function for att hitta index'et på tekniken "ankle lock".</p>
+            <img src="findIndex.JPG" alt="bild på kod">
+            <ul>
+                <li>Om du vill ha index’et av ett hittat värde: <strong>array.prototype.indexOf()</strong></li>
+                <li>Om du vill ta reda på om ett värde finns i en array <strong>array.prototype.includes()</strong>
+                </li>
+                <li>Om du vill ta reda på om något element uppfyller kravet använd
+                    <strong>array.prototype.some()</strong> </li>
+            </ul>
+            <h4>Moduler i Javascript</h4>
+            <p>Moduler kan vi använda för att dela upp större arbeten. Vi kan till exempel dela in olika funktioner i
+                olika .mjs-filer som vanligtvis läggs i en mapp som döps till “modules”. I mjs-filerna skapar vi t.ex.
+                en function. När vi är klara med funktionen så behöver mjs-filen länkas till vår script.js-fil. Det gör
+                vi genom att lägga till en “export” innan själva funktionen: <strong>export function printHw(){
+                console.log(“Hello World”);}.</strong> 
+                I vår script.js-fil behöver vi importera vår mjs-fil.
+                Det gör vi genom att lägga till export, följt av namnet på funktionen och sökvägen till filen: <strong>import {
+                printHw } from “./modules/namnpåfil.mjs”;</strong>.
+
+                När vi väl har importerat funtionen kan vi anropa den precis som vanligt genom att skriva ut funtionen
+                <strong>printHw();</strong> 
+            </p>
+
         </div>
-        <div>
-            <h1>Måndag-Fredag, 2021-09-13 - 2021-09-17</h2>
+        <div class="inlägg">
+            <h1>Måndag, 2021-09-27</h1>
+            <h4>Javascript och dataformatet JSON</h4>
+            <p>Vi skapar en JSON string med namn och tillhörande värde för varje namn på det här sättet: const
+                dataAboutNiklas = '{"name":"Niklas","age":30, "car":Opel}’. För att göra om våra JSON strings till ett
+                objekt gör vi: const myObj = JSON.parse(dataAboutNiklas);. <br> Vi kan även göra olika subkategorier i
+                varje nyckel på följade sätt: const dataAboutNiklas = '{"name":"Niklas", "age":30,
+                "car":”color”:”silver”, “seats”:”5”}’.
+                på så sätt kan vi få mer detaljerad iformation om en specifik kategori. <br> För att visa infomationen i
+                t.ex. en tom p-tag med id=message kan vi skriva: document.querySelector(“#message”).textContent =
+                myObj.car.color. Och då får vi ut svaret “silver” i p-tagen.</p>
+        </div>
+        <div class="inlägg">
+            <h1>Måndag-Fredag, 2021-09-20 - 2021-09-24</h1>
+            <h4>Skapa ett CV och portfolio</h4>
+            <p></p>
+        </div>
+        <div class="inlägg">
+            <h1>Måndag-Fredag, 2021-09-13 - 2021-09-17</h>
 
                 <h4>Skapa en inloggingssida</h4>
                 <p>Den här veckan bestod främst av att fortsätta öva på saker från tidigare veckan och sedan
@@ -30,29 +75,29 @@
                     just sånt jag skrev förra veckan men en stor och viktig nu detalj som jag gick använda var att skapa
                     nya divar direkt från JS istället för att ha färdiga divar på html som jag sedan manipulerade med
                     visible och hidden.</p>
-                    <img src="inloggingssida.JPG" alt="Bild på kod från inloggingssida">
+                <img src="inloggingssida.JPG" alt="Bild på kod från inloggingssida">
         </div>
-        <div class="grey">
-            <h1>Fredag, 2021-09-10</h2>
+        <div class="grey, inlägg">
+            <h1>Fredag, 2021-09-10</h1>
 
-                <h4>Local Storage</h4>
-                <p>Local Storage och Sesstion Storage är information som vi kan spara på webbläsaren. informationen som
-                    sparas kommer inte att försvinna när man laddar om sidan. Skillnaden på Storage and Session är att
-                    information som sparas som Storage (localStorage.setItem("name", "Niklas");) kommer att finnas kvar
-                    i webbläsaren trots att man stänger ner flik, webbläsare och t.o.m. datorn. Medan information som
-                    spara som Session (sessionStorage.setItem("name", "Niklas");) bara sparas så länge som användaren
-                    har uppe filken, annars försvinner informationen. informationen som spras i Storage sparas alltid i
-                    par, där den första parametern är key eller "kategorin" och den andra är värdet som ska sättas till
-                    kategorin. Känslig information bör aldrig sparas i Storage då den är lättåtkomlig. Känslig
-                    information är bättre att spara på en server där den inte kan nås lika lätt. Med Storage kan man
-                    göra flera olika saker, t.ex. clear, getItem, key, removeItem, setItem osv.</p>
-                <img src="localStorage.JPG" alt="localStorageImg">
+            <h4>Local Storage</h4>
+            <p>Local Storage och Sesstion Storage är information som vi kan spara på webbläsaren. informationen som
+                sparas kommer inte att försvinna när man laddar om sidan. Skillnaden på Storage and Session är att
+                information som sparas som Storage (localStorage.setItem("name", "Niklas");) kommer att finnas kvar
+                i webbläsaren trots att man stänger ner flik, webbläsare och t.o.m. datorn. Medan information som
+                spara som Session (sessionStorage.setItem("name", "Niklas");) bara sparas så länge som användaren
+                har uppe filken, annars försvinner informationen. informationen som spras i Storage sparas alltid i
+                par, där den första parametern är key eller "kategorin" och den andra är värdet som ska sättas till
+                kategorin. Känslig information bör aldrig sparas i Storage då den är lättåtkomlig. Känslig
+                information är bättre att spara på en server där den inte kan nås lika lätt. Med Storage kan man
+                göra flera olika saker, t.ex. clear, getItem, key, removeItem, setItem osv.</p>
+            <img src="localStorage.JPG" alt="localStorageImg">
 
         </div>
 
         <br>
         <div class="inlägg">
-            <h2>Torsdag, 2021-09-09</h2>
+            <h1>Torsdag, 2021-09-09</h1>
 
             <h4>Övningsuppgifter</h4>
             <p>Idag gjorde jag bara övningsuppgifter hela dagen. Övningsuppgifterna var; Manipulera DOM, Funktioner,
@@ -76,8 +121,8 @@
         </div>
 
         <br>
-        <div class="grey">
-            <h2>Onsdag, 2021-09-08</h2>
+        <div class="grey, inlägg">
+            <h1>Onsdag, 2021-09-08</h1>
 
             <h4>Object Properties och Methods </h4>
 
@@ -135,8 +180,8 @@
 
         <br>
 
-        <div>
-            <h2>Tisdag, 2021-09-07</h2>
+        <div class="inlägg">
+            <h1>Tisdag, 2021-09-07</h1>
 
             <p>Javascript används för att interagera med hemsidor. Precis som css så kan man skriva JS direkt i
                 html-dokummentet men standarden är att man skriver det i ett separat dokumment precis som med CSS. JS är
@@ -198,8 +243,8 @@
 
         <br>
 
-        <div class="grey">
-            <h2>Måndag, 2021-09-06</h2>
+        <div class="grey, inlägg" id="inlägg">
+            <h1>Måndag, 2021-09-06</h1>
 
             <p>Idag har större delen av dagen gått till att studera studieteknik. Jag hann även påbörja Introduktion
                 till Javascript (vecka 2 och 3) där jag bland annat fick lära mig: <strong>URL</strong>=<strong>Uniform
@@ -215,5 +260,5 @@
     </div>
     <script src="js/bootstrap.js"></script>
 </body>
-</html>
 
+</html>
