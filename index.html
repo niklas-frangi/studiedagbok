@@ -17,6 +17,33 @@
                 <h4></h4>
                 <p></p>
         </div> -->
+        <div>
+            <h1>Måndag, 2021-10-25</h1>
+            <h4>Introduktion Node.js</h4>
+            <p> <strong>Node</strong>  är ett open source serverprogram som kan installeras på många olika typer av klienter som kan
+                hantera anropen för att hämta filer och data från databaser och sedan visa upp dem på t.ex. en
+                webbläsare. Node använder sig av programmeringsspråket Javascript.
+<br><br>
+                <strong>Npm</strong>  (node package manager) ett bibliotek till node där det finns flera olika färdiga plug-ins med
+                färdiga lösningar, tex. datumhantering mm. Underlättar för att inte behöva koda lika många funktioner
+                från grunden. Man installerar nya plug-ins genom att skriva npm install följt av namnet på paketet.
+                Det går även att tilldela olika “flaggor” per plug-in om man vill att det ska installeras på ett visst
+                sätt. T.ex. om man lägger till ett -g betyder det att installationen sker globalt och kommer att
+                tillämpas på alla projekt från start.
+<br><br>
+                <strong>Express</strong>  är det mest populära backend-ramverket för Node. Express underlättar hanteringen av de olika
+                byggstenarna som krävs för en API. Ger snabbt en grundstruktur så att vi kan komma igång med vår server.
+                Starta servern med “npm start” i console logen och ctrl + C för att stänga av servern.
+<br><br>
+                <strong>Nodemon</strong> : nodemon är lite som liverServer är för vsCode. Så fort det sker ändringar i filerna så startar
+                den om servern automatiskt.
+<br><br>
+                <strong>Routing</strong> , med routing menar man hur applikationen svarar beroende på vilken URL man besöker och den
+                specifika HTTP requesten. Svaret baseras också på vilken method som är kopplad din just den URLen. De
+                olika methods som finns är GET, POST, PUT och DELETE. Get hämtar data, post skickar data, put byter ut
+                befintig data och delete tar bort befintlig data.
+            </p>
+        </div>
         <div class="inlägg">
             <h1>Måndag, 2021-10-11</h1>
             <h4>Fördjupning Javascript</h4>
@@ -32,20 +59,22 @@
                 <li>Om du vill ta reda på om ett värde finns i en array <strong>array.prototype.includes()</strong>
                 </li>
                 <li>Om du vill ta reda på om något element uppfyller kravet använd
-                    <strong>array.prototype.some()</strong> </li>
+                    <strong>array.prototype.some()</strong>
+                </li>
             </ul>
             <h4>Moduler i Javascript</h4>
             <p>Moduler kan vi använda för att dela upp större arbeten. Vi kan till exempel dela in olika funktioner i
                 olika .mjs-filer som vanligtvis läggs i en mapp som döps till “modules”. I mjs-filerna skapar vi t.ex.
                 en function. När vi är klara med funktionen så behöver mjs-filen länkas till vår script.js-fil. Det gör
                 vi genom att lägga till en “export” innan själva funktionen: <strong>export function printHw(){
-                console.log(“Hello World”);}.</strong> 
+                    console.log(“Hello World”);}.</strong>
                 I vår script.js-fil behöver vi importera vår mjs-fil.
-                Det gör vi genom att lägga till export, följt av namnet på funktionen och sökvägen till filen: <strong>import {
-                printHw } from “./modules/namnpåfil.mjs”;</strong>.
+                Det gör vi genom att lägga till export, följt av namnet på funktionen och sökvägen till filen:
+                <strong>import {
+                    printHw } from “./modules/namnpåfil.mjs”;</strong>.
 
                 När vi väl har importerat funtionen kan vi anropa den precis som vanligt genom att skriva ut funtionen
-                <strong>printHw();</strong> 
+                <strong>printHw();</strong>
             </p>
 
         </div>
